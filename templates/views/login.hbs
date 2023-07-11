@@ -1,0 +1,58 @@
+{{>headerlinks}}
+<!--Hero section-->
+<section class="hero ">
+
+  <!--Header-->
+  {{>header}}
+  <style>
+  .wrapper{
+    background-color: #fff;
+  }
+  
+  .footer{
+    background-color: #000;
+  }
+</style>
+  <!--End header-->
+</section>
+<!--End hero section-->
+
+<!--registration starts-->
+<div class="LoginPageContainer container body-margin">
+    <div class="LoginPageInnerContainer row">
+        <div class="ImageContianer col-md-4 ">
+            <img src="https://i.imgur.com/MYZd7of.png" class="GroupImage">
+        </div>
+        <div class="LoginFormContainer col-md-4">
+            <div class="LoginFormInnerContainer">
+              
+                <header class="text-dark">Log in</header>
+                <header class="subHeader">Welcome to <b>Sanam Band!</b> Please Enter your Details</header>
+
+                <form action="/login" method="post">
+                    <div class="inputContainer">
+                        <label class="label" for="emailAddress"><img src="https://i.imgur.com/Hn13wvm.png" class="labelIcon"><span>Email
+                                Address*</span></label>
+                        <input type="email" class="input" name="email" id="emailAddress" placeholder="Enter your Email Address">
+                    </div>
+                    <div class="inputContainer">
+                        <label class="label" for="password"><img src="https://i.imgur.com/g5SvdfG.png"
+                                class="labelIcon"><span>Password*</span></label>
+                        <input type="password" class="input" name="password" id="password" placeholder="Enter your Password">
+                    </div>
+                    <div class="OptionsContainer">
+                        <div class="checkboxContainer">
+                            <input type="checkbox" id="RememberMe" class="checkbox"> <label for="RememberMe">Remember
+                                me</label>
+                        </div>
+                        <a href="#" class="ForgotPasswordLink">Forgot Password?</a>
+                    </div>
+                    <button class="LoginButton">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--registration Ends-->
+
+{{>footer}}

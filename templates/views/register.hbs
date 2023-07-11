@@ -1,0 +1,83 @@
+{{>headerlinks}}
+<style>
+  .wrapper {
+    background-color: #fff;
+  }
+  .footer{
+    background-color: #000;
+  }
+</style>
+<!--Hero section-->
+<section class="hero ">
+
+  <!--Header-->
+  {{>header}}
+  <!--End header-->
+</section>
+<!--End hero section-->
+
+<!--registration starts-->
+
+<!--registration starts-->
+<div class="LoginPageContainer container body-margin container">
+  <div class="LoginPageInnerContainer row">
+    {{!-- <div class="ImageContianer col-md-4">
+      <img src="https://i.imgur.com/MYZd7of.png" class="GroupImage">
+    </div> --}}
+    <div class="LoginFormContainer RegisterFormContainer col-md-12">
+      <div class="LoginFormInnerContainer">
+
+        <header class=" text-dark">Register now</header>
+        <header class="subHeader">Welcome to <b>Sanam Band!</b> Please Enter your Details</header>
+
+        <form method="post" action="/register">
+          <div class="row">
+            <div class="inputContainer col-md-6">
+              <label class="label" for="firstname"><span>First Name*</span></label>
+              <input type="text" class="input" name="firstname" id="firstname" placeholder="Enter your First Name">
+            </div>
+            <div class="inputContainer col-md-6">
+              <label class="label" for="lastname"><span>Last Name*</span></label>
+              <input type="text" class="input" name="lastname" id="lastname" placeholder="Enter your Last Name">
+            </div>
+          </div>
+          <div class="row">
+            <div class="inputContainer col-md-6">
+              <label class="label" for="emailAddress"><span>Email
+                  Address*</span></label>
+              <input type="email" class="input" name="email" id="emailAddress" placeholder="Enter your Email Address">
+            </div>
+            <div class="inputContainer col-md-6">
+              <label class="label" for="mobile"><span>Mobile*</span></label>
+              <input type="text" class="input" name="mobile" id="mobile" placeholder="Enter your mobile">
+            </div>
+          </div>
+         <div class="row">
+            <div class="inputContainer col-md-6">
+            <label class="label" for="password"><span>Password*</span></label>
+            <input type="password" class="input" name="password" id="password" placeholder="Enter your Password">
+          </div>
+            <div class="inputContainer col-md-6">
+            <label class="label"  for="confirmpassword"><span>Confirm Password*</span></label>
+            <input type="password" class="input" name="confirmpassword" id="confirmpassword" placeholder="Enter your Password">
+          </div>
+         </div>
+
+
+          <div class="OptionsContainer">
+            <div class="checkboxContainer">
+              <input type="checkbox" id="RememberMe" class="checkbox"> <label for="RememberMe">Remember
+                me</label>
+            </div>
+            <span class="text-dark">Already have account ? <a href="/login" class="ForgotPasswordLink">Login now</a>
+          </div>
+          <button class="LoginButton">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--registration Ends-->
+<!--registration Ends-->
+
+{{>footer}}
